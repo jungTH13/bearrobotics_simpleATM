@@ -14,6 +14,7 @@
 python main_controller.py
 ```
 **************** test ouput ******************
+
 (Press 'c' to exit the program)
 Pleas insert your card: 6258400034823441
 
