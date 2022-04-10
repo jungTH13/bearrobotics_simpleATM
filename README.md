@@ -12,7 +12,7 @@
 ```python
 #Run user controller
 python main_controller.py
-```
+
 **************** test ouput ******************
 
 (Press 'c' to exit the program)
@@ -86,8 +86,9 @@ Enter the desired account index: p
 
 (Press 'c' to exit the program)
 Pleas insert your card: c
-****************************************
 
+*************************************************
+```
 ```python
 #Add user information(already stored in DB)
 python create_usr_account.py --card '6258400034823441' --pin '12345678' --name 'Taeho_Jung' --year 29
