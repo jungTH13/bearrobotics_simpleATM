@@ -22,9 +22,12 @@ class DB_controller():
         self._cur.execute(f"""CREATE TABLE IF NOT EXISTS account(
                                                 account_id VARCHAR PRIMARY KEY,
                                                 card_number VARCHAR(16),
-                                                balance INT
+                                                balance INT,
+                                                CONSTRAINT card FOREIGN KEY(card_number)
+                                                REFERENCES {file_name}(card_number)
                                                 )
                                                 """)
+        self._cur.execute("""PRAGMA foreign_keys=1 """)
         
     
     def time(self):
@@ -73,8 +76,11 @@ class DB_controller():
     
     def create_account(self,card:str,account_id:str):
         search=self._cur.execute(f"""select account_id from account where account_id={account_id} """).fetchone()
+        search_card=self._cur.execute(f"""select card_number from {self.__file_name} where card_number={card} """).fetchone()
         if None != search:
             return (False,'exsts account_id')
+        elif search_card ==None:
+            return (False,'Card number does not exist')
         else:
             try:
                 self._cur.execute(f"insert into account VALUES('{account_id}','{card}','{0}')")
