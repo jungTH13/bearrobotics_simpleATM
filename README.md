@@ -26,7 +26,7 @@ Please select an account to trade
 'p': previous step
 Enter the desired account index: 0
 
-seleced account: 65270204311367
+selected account: 65270204311367
 (3, 20220410173631.844, 'withdrawal', 15394, None, 5606)
 (2, 20220410173627.27, 'deposit', None, 20000, 21000)
 (1, 20220410173623.6, 'deposit', None, 1000, 1000)
@@ -39,7 +39,7 @@ balance : 5606
 withdrawal amount: 10000
 
 insufficient balance
-seleced account: 65270204311367
+selected account: 65270204311367
 (3, 20220410173631.844, 'withdrawal', 15394, None, 5606)
 (2, 20220410173627.27, 'deposit', None, 20000, 21000)
 (1, 20220410173623.6, 'deposit', None, 1000, 1000)
@@ -52,7 +52,7 @@ balance : 5606
 withdrawal amount: 5000
 
 transaction success
-seleced account: 65270204311367
+selected account: 65270204311367
 (4, 20220410091623.81, 'withdrawal', 5000, None, 606)
 (3, 20220410173631.844, 'withdrawal', 15394, None, 5606)
 (2, 20220410173627.27, 'deposit', None, 20000, 21000)
@@ -66,7 +66,7 @@ balance : 606
 deposit amount: 20000
 
 transaction success
-seleced account: 65270204311367
+selected account: 65270204311367
 (5, 20220410091633.855, 'deposit', None, 20000, 20606)
 (4, 20220410091623.81, 'withdrawal', 5000, None, 606)
 (3, 20220410173631.844, 'withdrawal', 15394, None, 5606)

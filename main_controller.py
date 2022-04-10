@@ -39,7 +39,7 @@ while True:
                     break
                 
                 while True:
-                    print('seleced account:',usr.select)
+                    print('selected account:',usr.select)
                     for i in usr.transaction_info:
                         print(i)
                     print('balance :',usr.balance)
